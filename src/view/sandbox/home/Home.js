@@ -1,10 +1,25 @@
 import React from 'react';
 import { Button } from 'antd'
+import axios from 'axios'
 
 function Home(props) {
+	const ajax = () => {
+		/* axios.get('http://localhost:9000/roles?id=1').then(res => {
+		 console.log(res.data)
+		 }) */
+		axios.post('http://localhost:9000/roles', {
+			id: 7990,
+			username: '5dshufhdsui',
+			password: 12343356,
+			roleState: false,
+			default: true,
+			region: '',
+			roleId: 7990
+		})
+	}
 	return (
 		<div>
-			<Button type="primary">Button</Button>
+			<Button type="primary" onClick={ajax}>Button</Button>
 		</div>
 	);
 }

@@ -36,6 +36,8 @@ function SideMenu(props) {
 		])
 	];
 
+	// items.push(getItem('首11页', '/hom11e', <HomeOutlined />))
+
 	return (
 		<Sider trigger={null} collapsible collapsed={collapsed}>
 			<div className="logo">全球新闻发布管理系统</div>
