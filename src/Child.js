@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Child.module.css'
+import style from './Child.module.scss'
 
 function Child(props) {
 	return (
