@@ -1,8 +1,11 @@
 import React from 'react';
+import { Button } from 'antd'
 
 function Home(props) {
 	return (
-		<div>Home</div>
+		<div>
+			<Button type="primary">Button</Button>
+		</div>
 	);
 }
 

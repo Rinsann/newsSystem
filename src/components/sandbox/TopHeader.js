@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {
+	MenuFoldOutlined,
+	MenuUnfoldOutlined,
+} from '@ant-design/icons';
+import { Layout } from 'antd';
+
+const { Header } = Layout;
+
 
 function TopHeader(props) {
+
+	const [collapsed] = useState(false);
 	return (
-		<div>TopHeader</div>
+		<Header className="site-layout-background" style={{ padding: 0 }}>
+			{
+				collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />
+			}
+
+		</Header>
 	);
 }
 
