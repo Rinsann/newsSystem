@@ -4,9 +4,7 @@ import './App.css'
 
 function App(props) {
 	return (
-		<div>
 			<IndexRouter></IndexRouter>
-		</div>
 	);
 }
 
