@@ -67,7 +67,6 @@ function SideMenu(props) {
 	const [meun, setMeun] = useState([])
 	useEffect(() => {
 		axios.get('http://localhost:8000/rights?_embed=children').then(res => {
-			console.log(res.data)
 			setMeun(res.data)
 		})
 	}, [])
@@ -78,7 +77,7 @@ function SideMenu(props) {
 	}
 	const renderMenu = (menuList) => {
 		return menuList.map(item => {
-			if (item.children && checkPagePermission(item)) {
+			if (item.children?.length > 0 && checkPagePermission(item)) {
 				return <SubMenu key={item.key} icon={iconList[item.key]} title={item.title}>
 					{renderMenu(item.children)}
 				</SubMenu>
@@ -90,12 +89,18 @@ function SideMenu(props) {
 			}}>{item.title}</Menu.Item>
 		})
 	}
+	const selectKeys = [props.location.pathname]
+	const openKeys = ['/' + props.location.pathname.split('/')[1]]
 	return (
 		<Sider trigger={null} collapsible collapsed={false}>
-			<div className="logo">全球新闻发布管理系统</div>
-			<Menu theme="dark" mode="inline" defaultSelectedKeys={['3']}>
-				{renderMenu(meun)}
-			</Menu>
+			<div style={{ display: 'flex', height: '100%', 'flexDirection': 'column' }}>
+				<div className="logo">全球新闻发布管理系统</div>
+				<div style={{ flex: 1, overflow: 'auto' }}>
+					<Menu theme="dark" mode="inline" selectedKeys={selectKeys} defaultOpenKeys={openKeys}>
+						{renderMenu(meun)}
+					</Menu>
+				</div>
+			</div>
 		</Sider>
 	)
 }
