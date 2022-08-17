@@ -1,11 +1,6 @@
-import React from 'react';
-import IndexRouter from './router/indexRouter'
+import IndexRouter from './router/IndexRouter'
 import './App.css'
-
-function App(props) {
-	return (
-			<IndexRouter></IndexRouter>
-	);
+function App(){
+  return <IndexRouter></IndexRouter>
 }
-
-export default App;
+export default App

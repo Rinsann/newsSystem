@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09fe794e-31a0-4e5f-b573-db96c585fb86" name="Changes" comment="完成SideMenu组件">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/newssystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sandbox/SideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sandbox/SideMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sandbox/TopHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sandbox/TopHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sandbox/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sandbox/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/indexRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/indexRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/login/Login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/sandbox/NewSandBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/sandbox/NewsSandBox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/sandbox/home/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/sandbox/nopermission/NoPermission.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/sandbox/right-manage/RightList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/sandbox/right-manage/RoleList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/sandbox/user-manage/UserList.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2DNvLkTOsqD9UK81K9zZh4Ptxyz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/myFile/newssystem&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\rin\\AppData\\Local\\JetBrains\\Toolbox\\apps\\WebStorm\\ch-0\\221.5921.27\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09fe794e-31a0-4e5f-b573-db96c585fb86" name="Changes" comment="" />
+      <created>1660552305766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660552305766</updated>
+      <workItem from="1660552309150" duration="303000" />
+      <workItem from="1660607518968" duration="7626000" />
+      <workItem from="1660631557613" duration="3715000" />
+      <workItem from="1660636987896" duration="4786000" />
+      <workItem from="1660697526986" duration="652000" />
+      <workItem from="1660709527118" duration="13558000" />
+    </task>
+    <task id="LOCAL-00001" summary="反向代理">
+      <created>1660612677044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660612677044</updated>
+    </task>
+    <task id="LOCAL-00002" summary="路由架构">
+      <created>1660614826976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660614826976</updated>
+    </task>
+    <task id="LOCAL-00003" summary="搭建路由组件">
+      <created>1660616139969</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660616139969</updated>
+    </task>
+    <task id="LOCAL-00004" summary="使用Layout布局">
+      <created>1660634990611</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660634990611</updated>
+    </task>
+    <task id="LOCAL-00005" summary="TopHeader 组件">
+      <created>1660636341325</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660636341325</updated>
+    </task>
+    <task id="LOCAL-00006" summary="SideMenu.js 组件">
+      <created>1660638819542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660638819542</updated>
+    </task>
+    <task id="LOCAL-00007" summary="动态SideMenu.js 组件">
+      <created>1660640571840</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660640571840</updated>
+    </task>
+    <task id="LOCAL-00008" summary="JSONServer mock数据">
+      <created>1660641801461</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660641801461</updated>
+    </task>
+    <task id="LOCAL-00009" summary="JSONServer mock数据">
+      <created>1660710779030</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660710779030</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SideMenu获取后端数据">
+      <created>1660712558739</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660712558739</updated>
+    </task>
+    <task id="LOCAL-00011" summary="添加滚动条样式">
+      <created>1660718795835</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660718795835</updated>
+    </task>
+    <task id="LOCAL-00012" summary="完成SideMenu组件">
+      <created>1660720034186</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660720034186</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="反向代理" />
+    <MESSAGE value="路由架构" />
+    <MESSAGE value="搭建路由组件" />
+    <MESSAGE value="使用Layout布局" />
+    <MESSAGE value="TopHeader 组件" />
+    <MESSAGE value="SideMenu.js 组件" />
+    <MESSAGE value="动态SideMenu.js 组件" />
+    <MESSAGE value="JSONServer mock数据" />
+    <MESSAGE value="SideMenu获取后端数据" />
+    <MESSAGE value="添加滚动条样式" />
+    <MESSAGE value="完成SideMenu组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成SideMenu组件" />
+  </component>
+</project>
