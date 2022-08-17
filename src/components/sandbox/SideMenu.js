@@ -1,51 +1,103 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import { Layout, Menu } from 'antd';
-import {
-	UnlockOutlined,
-	UserOutlined,
-	HomeOutlined,
-} from '@ant-design/icons';
 import './index.css'
 import { withRouter } from 'react-router-dom'
+import {
+	UserOutlined,
+	LockOutlined,
+	MenuOutlined,
+	UserDeleteOutlined,
+	PartitionOutlined,
+	LaptopOutlined
+} from '@ant-design/icons';
+import axios from 'axios'
 
 const { Sider } = Layout;
+const { SubMenu } = Menu
+
+//模拟数组结构
+// const  menuList = [
+//   {
+//     key:"/home",
+//     title:"首页",
+//     icon:<UserOutlined />
+//   },
+//   {
+//     key:"/user-manage",
+//     title:"用户管理",
+//     icon:<UserOutlined />,
+//     children:[
+//       {
+//         key:"/user-manage/list",
+//         title:"用户列表",
+//         icon:<UserOutlined />
+//       }
+//     ]
+//   },
+//   {
+//     key:"/right-manage",
+//     title:"权限管理",
+//     icon:<UserOutlined />,
+//     children:[
+//       {
+//         key:"/right-manage/role/list",
+//         title:"角色列表",
+//         icon:<UserOutlined />
+//       },
+//       {
+//         key:"/right-manage/right/list",
+//         title:"权限列表",
+//         icon:<UserOutlined />
+//       }
+//     ]
+//   }
+// ]
+const iconList = {
+	'/home': <UserOutlined />,
+	'/user-manage': <LockOutlined />,
+	'/user-manage/list': <MenuOutlined />,
+	'/right-manage': <UserDeleteOutlined />,
+	'/right-manage/role/list': <PartitionOutlined />,
+	'/right-manage/right/list': <LaptopOutlined />
+
+}
 
 
 function SideMenu(props) {
+	const [meun, setMeun] = useState([])
+	useEffect(() => {
+		axios.get('http://localhost:8000/rights?_embed=children').then(res => {
+			console.log(res.data)
+			setMeun(res.data)
+		})
+	}, [])
 
-	const [collapsed] = useState(false);
 
-	function getItem(label, key, icon, children, type) {
-		return {
-			key,
-			icon,
-			children,
-			label,
-			type,
-		};
+	const checkPagePermission = (item) => {
+		return item.pagepermisson
 	}
+	const renderMenu = (menuList) => {
+		return menuList.map(item => {
+			if (item.children && checkPagePermission(item)) {
+				return <SubMenu key={item.key} icon={iconList[item.key]} title={item.title}>
+					{renderMenu(item.children)}
+				</SubMenu>
+			}
 
-	const items = [
-		getItem('首页', '/home', <HomeOutlined />),
-		getItem('用户管理', '/user-manage', <UserOutlined />, [
-			getItem('用户列表', '/user-manage/list')
-		]),
-		getItem('权限管理', '/right-manage', <UnlockOutlined />, [
-			getItem('角色列表', '/right-manage/role/list'),
-			getItem('权限列表', '/right-manage/right/list'),
-		])
-	];
-
-	// items.push(getItem('首11页', '/hom11e', <HomeOutlined />))
-
+			return checkPagePermission(item) && <Menu.Item key={item.key} icon={iconList[item.key]} onClick={() => {
+				//  console.log(props)
+				props.history.push(item.key)
+			}}>{item.title}</Menu.Item>
+		})
+	}
 	return (
-		<Sider trigger={null} collapsible collapsed={collapsed}>
+		<Sider trigger={null} collapsible collapsed={false}>
 			<div className="logo">全球新闻发布管理系统</div>
-			<Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} items={items} onClick={(obj) => {
-				props.history.push(obj.key)
-			}} />
+			<Menu theme="dark" mode="inline" defaultSelectedKeys={['3']}>
+				{renderMenu(meun)}
+			</Menu>
 		</Sider>
-	);
+	)
 }
 
-export default withRouter(SideMenu);
+export default withRouter(SideMenu)
