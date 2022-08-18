@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09fe794e-31a0-4e5f-b573-db96c585fb86" name="Changes" comment="完成权限列表">
+    <list default="true" id="09fe794e-31a0-4e5f-b573-db96c585fb86" name="Changes" comment="角色列表">
+      <change afterPath="$PROJECT_DIR$/src/components/user-manage/UserForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sandbox/SideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sandbox/SideMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/sandbox/right-manage/RoleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sandbox/right-manage/RoleList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/sandbox/user-manage/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sandbox/user-manage/UserList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -73,7 +73,7 @@
       <workItem from="1660636987896" duration="4786000" />
       <workItem from="1660697526986" duration="652000" />
       <workItem from="1660709527118" duration="13746000" />
-      <workItem from="1660787726613" duration="4260000" />
+      <workItem from="1660787726613" duration="13236000" />
     </task>
     <task id="LOCAL-00001" summary="反向代理">
       <created>1660612677044</created>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660728277665</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="角色列表">
+      <created>1660796330369</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660796330369</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +203,8 @@
     <MESSAGE value="添加滚动条样式" />
     <MESSAGE value="完成SideMenu组件" />
     <MESSAGE value="完成权限列表" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成权限列表" />
+    <MESSAGE value="角色列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="角色列表" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
