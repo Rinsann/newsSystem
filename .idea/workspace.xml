@@ -4,34 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09fe794e-31a0-4e5f-b573-db96c585fb86" name="Changes" comment="完成SideMenu组件">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/newssystem.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    <list default="true" id="09fe794e-31a0-4e5f-b573-db96c585fb86" name="Changes" comment="完成权限列表">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/sandbox/SideMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sandbox/SideMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sandbox/TopHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sandbox/TopHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sandbox/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sandbox/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/indexRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/indexRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupProxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login/Login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login/Login.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sandbox/NewSandBox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sandbox/NewsSandBox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sandbox/home/Home.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sandbox/nopermission/NoPermission.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sandbox/right-manage/RightList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sandbox/right-manage/RoleList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/sandbox/user-manage/UserList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/sandbox/right-manage/RoleList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/sandbox/right-manage/RoleList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +72,8 @@
       <workItem from="1660631557613" duration="3715000" />
       <workItem from="1660636987896" duration="4786000" />
       <workItem from="1660697526986" duration="652000" />
-      <workItem from="1660709527118" duration="13558000" />
+      <workItem from="1660709527118" duration="13746000" />
+      <workItem from="1660787726613" duration="4260000" />
     </task>
     <task id="LOCAL-00001" summary="反向代理">
       <created>1660612677044</created>
@@ -182,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660720034186</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="完成权限列表">
+      <created>1660728277665</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660728277665</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +195,19 @@
     <MESSAGE value="SideMenu获取后端数据" />
     <MESSAGE value="添加滚动条样式" />
     <MESSAGE value="完成SideMenu组件" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成SideMenu组件" />
+    <MESSAGE value="完成权限列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成权限列表" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/sandbox/right-manage/RightList.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

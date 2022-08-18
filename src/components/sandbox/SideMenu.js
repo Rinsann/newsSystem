@@ -60,9 +60,7 @@ function SideMenu(props) {
   const [meun, setMeun] = useState([])
   useEffect(() => {
     axios.get('http://localhost:8000/rights?_embed=children').then(res => {
-      console.log(res.data)
       setMeun(res.data)
-
     })
   }, [])
 
